@@ -1,3 +1,4 @@
+import os
 from PIL import Image, ImageDraw, ImageFont
 
 
@@ -43,7 +44,8 @@ def generate_avatar(text='', shape='square', size='128', background_color='light
 
     text_size = int(size / scale_factor)
     try:
-        font = ImageFont.truetype('static/Arial.ttf', text_size)
+        font_path = os.path.join(os.path.dirname(__file__), 'Arial.ttf')
+        font = ImageFont.truetype(font_path, text_size)
     except OSError:
         font = None
 
