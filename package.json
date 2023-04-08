@@ -1,0 +1,8 @@
+{
+  "name": "@tfisicaro/avatar-api",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "FLASK_ENV=development flask run",
+    "start": "flask run"
+  }
+}
