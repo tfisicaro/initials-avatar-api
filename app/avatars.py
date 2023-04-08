@@ -43,9 +43,9 @@ def generate_avatar(text='', shape='square', size='128', background_color='light
 
     text_size = int(size / scale_factor)
     try:
-        font = ImageFont.truetype('C:\Windows\Fonts\SegoeUI.ttf', text_size)
+        font = ImageFont.truetype('static/Arial.ttf', text_size)
     except OSError:
-        font = ImageFont.truetype('Arial.ttf', text_size)
+        font = None
 
     # Define our base
     base_background_color = background_color
