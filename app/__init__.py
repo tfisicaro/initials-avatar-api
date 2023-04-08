@@ -1,8 +1,8 @@
 import random
 from io import BytesIO
 from flask import Flask, request, send_file, make_response, send_from_directory
-from application.avatars import get_initials, generate_avatar
-from application.settings import SUPPORTED_SHAPES, BACKGROUND_COLORS, DEFAULT_BACKGROUND_COLOR, DEFAULT_TEXT_COLOR, \
+from .avatars import get_initials, generate_avatar
+from .settings import SUPPORTED_SHAPES, BACKGROUND_COLORS, DEFAULT_BACKGROUND_COLOR, DEFAULT_TEXT_COLOR, \
     DEFAULT_SIZE, DEFAULT_SHAPE
 
 
